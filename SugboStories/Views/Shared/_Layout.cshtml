@@ -2,49 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - SugboStories</title>
-    <script type="importmap"></script>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/SugboStories.styles.css" asp-append-version="true" />
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SugboStories</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - Cebu Living Archive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f1e6;
+            color: #4b4035;
+        }
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 - SugboStories - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        .title-font {
+            font-family: 'Cormorant Garamond', serif;
+        }
+    </style>
+</head>
+<body class="bg-[#f4f1e6]">
+    <!-- SHARED NAVBAR -->
+    <nav class="w-full bg-[#2f2a24] text-[#d9d2c3] shadow-md">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+            <a asp-controller="Home" asp-action="Index" class="title-font text-xl tracking-wide hover:text-white transition">
+                Cebu Living Archive
+            </a>
+            <ul class="flex gap-8 text-sm md:text-base">
+                <li><a asp-controller="Home" asp-action="Index" class="hover:text-white transition">Home</a></li>
+                <li><a asp-controller="Home" asp-action="Stories" class="hover:text-white transition">Stories</a></li>
+                <li><a asp-controller="Home" asp-action="Sites" class="hover:text-white transition">Sites</a></li>
+                <li><a asp-controller="Home" asp-action="Archives" class="hover:text-white transition">Archives</a></li>
+                <li><a asp-controller="Home" asp-action="Timeline" class="hover:text-white transition">Timeline</a></li>
+                <li><a asp-controller="Home" asp-action="About" class="hover:text-white transition">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- MAIN CONTENT INJECTION -->
+    <main role="main">
+        @RenderBody()
+    </main>
+    <!-- SHARED FOOTER -->
+    <footer class="bg-[#d8d3c1] border-t border-[#c8c0ac] py-14">
+        <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div>
+                <h3 class="title-font text-2xl text-[#5a4635]">Cebu Living Archive</h3>
+                <p class="mt-4 text-sm leading-relaxed text-[#6d6255]">
+                    Preserving history for future generations through curated digital
+                    storytelling and archival exploration.
+                </p>
+                <p class="mt-8 text-xs text-[#7c7164]">© 2024 Cebu Digital Living Archive. All rights reserved.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold tracking-wide text-[#5a4635] mb-5">EXPLORE</h4>
+                <ul class="space-y-3 text-sm text-[#6d6255]">
+                    <li><a asp-controller="Home" asp-action="Index" class="hover:text-black">Home</a></li>
+                    <li><a asp-controller="Home" asp-action="Stories" class="hover:text-black">Stories</a></li>
+                    <li><a asp-controller="Home" asp-action="Sites" class="hover:text-black">Sites</a></li>
+                    <li><a asp-controller="Home" asp-action="Archives" class="hover:text-black">Archives</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold tracking-wide text-[#5a4635] mb-5">INFORMATION</h4>
+                <ul class="space-y-3 text-sm text-[#6d6255]">
+                    <li><a asp-controller="Home" asp-action="Contact" class="hover:text-black">Contact</a></li>
+                    <li><a asp-controller="Home" asp-action="Disclaimer" class="hover:text-black">Disclaimer</a></li>
+                    <li><a asp-controller="Home" asp-action="Accessibility" class="hover:text-black">Accessibility</a></li>
+                    <li><a asp-controller="Home" asp-action="Privacy" class="hover:text-black">Privacy Policy</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

@@ -1,8 +1,96 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!-- HERO SECTION -->
+<section class="max-w-7xl mx-auto px-5 mt-8">
+    <div class="relative overflow-hidden">
+
+        <!-- Background Image -->
+        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=1974&auto=format&fit=crop"
+             class="w-full h-[550px] object-cover sepia opacity-90"
+             alt="Historical Cebu" />
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-[#c9b48b]/25"></div>
+
+        <!-- Center Card -->
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="bg-[#efe6d4]/90 px-10 py-7 shadow-xl text-center max-w-md">
+                <h1 class="title-font text-5xl text-[#5a4635] font-semibold">
+                    Cebu Living Archive
+                </h1>
+                <p class="mt-3 text-[#7b6651] text-sm tracking-wide">
+                    Preserving the Soul of the Queen City
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ERA SECTION -->
+<section class="max-w-7xl mx-auto px-8 mt-20 mb-24">
+    <h2 class="title-font text-4xl text-[#5b4937] mb-10">
+        Eras of Resilience
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- CARD 1: Spanish Era -->
+        <div class="bg-[#f8f5ee] shadow-md overflow-hidden border border-[#e4dccf]">
+            <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1974&auto=format&fit=crop"
+                 class="h-64 w-full object-cover sepia"
+                 alt="Spanish Era" />
+            <div class="p-6">
+                <h3 class="title-font text-3xl text-[#5a4635] mb-3">
+                    The Spanish Era
+                </h3>
+                <p class="text-sm leading-relaxed text-[#746555] mb-5">
+                    Explore the 300-year legacy of Spanish colonization, from the arrival
+                    of Magellan to the spread of faith and governance.
+                </p>
+                <button class="bg-[#6e4e3a] hover:bg-[#593d2c] transition text-white px-5 py-2 text-xs tracking-widest">
+                    READ MORE
+                </button>
+            </div>
+        </div>
+
+        <!-- CARD 2: American Period -->
+        <div class="bg-[#f8f5ee] shadow-md overflow-hidden border border-[#e4dccf]">
+            <img src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?q=80&w=1974&auto=format&fit=crop"
+                 class="h-64 w-full object-cover sepia"
+                 alt="American Period" />
+            <div class="p-6">
+                <h3 class="title-font text-3xl text-[#5a4635] mb-3">
+                    The American Period
+                </h3>
+                <p class="text-sm leading-relaxed text-[#746555] mb-5">
+                    A time of rapid modernization, public education, and infrastructure
+                    development that reshaped Cebu society.
+                </p>
+                <button class="bg-[#6e4e3a] hover:bg-[#593d2c] transition text-white px-5 py-2 text-xs tracking-widest">
+                    READ MORE
+                </button>
+            </div>
+        </div>
+
+        <!-- CARD 3: WWII -->
+        <div class="bg-[#f8f5ee] shadow-md overflow-hidden border border-[#e4dccf]">
+            <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?q=80&w=1974&auto=format&fit=crop"
+                 class="h-64 w-full object-cover sepia"
+                 alt="WWII" />
+            <div class="p-6">
+                <h3 class="title-font text-3xl text-[#5a4635] mb-3">
+                    WWII & Liberation
+                </h3>
+                <p class="text-sm leading-relaxed text-[#746555] mb-5">
+                    The devastation of war, the courage of the Cebuanos resisting, and
+                    the rebirth of the city after liberation.
+                </p>
+                <button class="bg-[#6e4e3a] hover:bg-[#593d2c] transition text-white px-5 py-2 text-xs tracking-widest">
+                    READ MORE
+                </button>
+            </div>
+        </div>
+    </div>
+</section>

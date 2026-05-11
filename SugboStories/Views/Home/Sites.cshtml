@@ -1,0 +1,129 @@
+﻿@{
+    ViewData["Title"] = "Sites";
+}
+
+<!-- HEADER -->
+<section class="max-w-7xl mx-auto px-10 pt-10">
+    <h1 class="title-font text-6xl font-semibold text-[#5f4d3d] leading-tight">
+        Explore Our Heritage
+    </h1>
+
+    <p class="mt-5 max-w-3xl text-[#7b6a5b] leading-relaxed">
+        Navigate the rich tapestry of Cebu’s heritage sites and historic map.
+        Discover architectural marvels, enduring symbols, and sacred locations
+        that have stood the test of time, connecting us to generations past.
+    </p>
+</section>
+
+<!-- MAP SECTION -->
+<section class="max-w-7xl mx-auto px-10 mt-10">
+    <div class="border border-[#bfa77d] shadow-md overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1974&auto=format&fit=crop"
+             alt="Map"
+             class="w-full h-[360px] object-cover sepia opacity-90" />
+    </div>
+</section>
+
+<!-- HERITAGE SITES LIST -->
+<section class="max-w-7xl mx-auto px-10 py-16 space-y-12">
+
+    <!-- CARD 1: Basilica Minore del Santo Niño -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 bg-[#f9f7ef] border border-[#ddd2c1] overflow-hidden shadow-sm">
+
+        <!-- Image -->
+        <div class="lg:col-span-2">
+            <img src="https://images.unsplash.com/photo-1566552881560-0be862a7c445?q=80&w=1974&auto=format&fit=crop"
+                 alt="Basilica"
+                 class="w-full h-full object-cover sepia" />
+        </div>
+
+        <!-- Content -->
+        <div class="p-8 flex flex-col justify-between">
+            <div>
+                <h2 class="title-font text-4xl text-[#5e4b3b]">
+                    Basilica Minore del Santo Niño
+                </h2>
+                <p class="mt-5 text-[#786758] leading-relaxed text-sm">
+                    Founded in 1565, this is the oldest Roman Catholic church in the
+                    country, built on the spot where the image of the Santo Niño de Cebu
+                    was found during the expedition of Miguel López de Legazpi.
+                </p>
+            </div>
+
+            <!-- Buttons -->
+            <div class="flex gap-4 mt-8">
+                <button class="bg-[#8a6748] hover:bg-[#715339] transition text-white px-5 py-2 text-sm">
+                    Visit History
+                </button>
+                <button class="border border-[#c9b9a5] hover:bg-[#efe5d5] transition px-5 py-2 text-sm text-[#6b5847]">
+                    View Gallery
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARD 2: Two-Column Row -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+        <!-- SMALL CARD: Fort San Pedro -->
+        <div class="bg-[#f9f7ef] border border-[#ddd2c1] shadow-sm overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1974&auto=format&fit=crop"
+                 alt="Fort"
+                 class="w-full h-64 object-cover sepia" />
+
+            <div class="p-6">
+                <h3 class="title-font text-3xl text-[#5f4d3d]">
+                    Fort San Pedro
+                </h3>
+                <p class="mt-4 text-sm leading-relaxed text-[#786758]">
+                    A military defense structure built by the Spaniards in 1565,
+                    the triangular fort remains one of Cebu’s best-preserved
+                    colonial landmarks.
+                </p>
+                <div class="flex gap-3 mt-6">
+                    <button class="bg-[#8a6748] hover:bg-[#715339] transition text-white px-4 py-2 text-sm">
+                        Visit History
+                    </button>
+                    <button class="border border-[#c9b9a5] hover:bg-[#efe5d5] transition px-4 py-2 text-sm text-[#6b5847]">
+                        View Gallery
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- LARGE CARD: Ancestral Homes of Carcar -->
+        <div class="lg:col-span-2 bg-[#f9f7ef] border border-[#ddd2c1] shadow-sm overflow-hidden grid grid-cols-1 md:grid-cols-2">
+            <!-- Image -->
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1974&auto=format&fit=crop"
+                 alt="Carcar"
+                 class="w-full h-full object-cover sepia" />
+
+            <!-- Content -->
+            <div class="p-8 flex flex-col justify-between">
+                <div>
+                    <span class="text-xs uppercase tracking-widest text-[#9b8a79]">
+                        Cultural Heritage
+                    </span>
+                    <h2 class="title-font text-4xl mt-3 text-[#5f4d3d]">
+                        Ancestral Homes of Carcar
+                    </h2>
+                    <p class="mt-5 text-sm leading-relaxed text-[#786758]">
+                        The city of Carcar is renowned for its well-preserved Spanish
+                        and American colonial homes showcasing exquisite woodwork and capiz windows.
+                    </p>
+                </div>
+
+                <div class="flex gap-4 mt-8">
+                    <button class="bg-[#8a6748] hover:bg-[#715339] transition text-white px-5 py-2 text-sm">
+                        Visit History
+                    </button>
+                    <button class="border border-[#c9b9a5] hover:bg-[#efe5d5] transition px-5 py-2 text-sm text-[#6b5847]">
+                        View Gallery
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>

@@ -1,0 +1,172 @@
+﻿@{
+    ViewData["Title"] = "Archives";
+}
+
+<!-- HERO SECTION -->
+<section class="max-w-5xl mx-auto text-center pt-20 px-6">
+    <p class="uppercase tracking-[0.25em] text-xs text-[#9a8a79]">
+        Historical Records Collection
+    </p>
+
+    <h1 class="title-font text-6xl font-semibold text-[#5f4d3d] mt-5">
+        Explore the Archives
+    </h1>
+
+    <p class="mt-6 text-[#7a6a5a] leading-relaxed max-w-2xl mx-auto">
+        Discover Cebu’s thousands of digitized documents, historical maps,
+        photographs, and sacred records spanning more than centuries of
+        Visayan history.
+    </p>
+
+    <!-- SEARCH BAR -->
+    <div class="mt-10 flex items-center justify-center">
+        <div class="flex w-full max-w-3xl bg-white border border-[#ddd1c1] rounded-full overflow-hidden shadow-sm">
+            <input type="text"
+                   placeholder="Search by title, category, or reference number..."
+                   class="flex-1 px-6 py-4 bg-transparent outline-none text-sm text-[#6f5f50]" />
+            <button class="bg-[#7a5b43] hover:bg-[#624734] transition text-white px-8 text-sm">
+                Search
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- CATEGORY FILTERS -->
+<section class="max-w-7xl mx-auto px-8 mt-14">
+    <div class="flex flex-wrap items-center justify-between gap-6">
+        <div class="flex flex-wrap gap-3">
+            <button class="px-5 py-2 rounded-full bg-[#7a5b43] text-white text-sm">
+                All Archives
+            </button>
+            <button class="px-5 py-2 rounded-full border border-[#d4c7b6] text-sm text-[#756556] hover:bg-[#ebe3d5] transition">
+                Maps
+            </button>
+            <button class="px-5 py-2 rounded-full border border-[#d4c7b6] text-sm text-[#756556] hover:bg-[#ebe3d5] transition">
+                Letters
+            </button>
+            <button class="px-5 py-2 rounded-full border border-[#d4c7b6] text-sm text-[#756556] hover:bg-[#ebe3d5] transition">
+                Photos
+            </button>
+            <button class="px-5 py-2 rounded-full border border-[#d4c7b6] text-sm text-[#756556] hover:bg-[#ebe3d5] transition">
+                Records
+            </button>
+        </div>
+
+        <div class="text-sm text-[#8a7a6b]">
+            Showing 1–6 of 248 archives
+        </div>
+    </div>
+</section>
+
+<!-- ARCHIVE GRID -->
+<section class="max-w-7xl mx-auto px-8 py-14">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <!-- CARTA HYDROGRAPHICA -->
+        <div class="bg-[#faf8f2] border border-[#ddd3c4] shadow-sm overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1974&auto=format&fit=crop"
+                 alt="Old Map"
+                 class="w-full h-72 object-cover sepia" />
+            <div class="p-6">
+                <span class="text-xs uppercase tracking-widest text-[#9a8a79]">Maps</span>
+                <h2 class="title-font text-3xl mt-3 text-[#5f4d3d] leading-tight">
+                    Carta Hydrographica y Chorographica de Visayas
+                </h2>
+                <p class="mt-4 text-sm text-[#7a6a5a] leading-relaxed">
+                    A surviving 18th-century Spanish navigation map documenting the trade routes of the Visayas.
+                </p>
+            </div>
+        </div>
+
+        <!-- LEON KILAT CORRESPONDENCE -->
+        <div class="bg-[#faf8f2] border border-[#ddd3c4] shadow-sm overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1974&auto=format&fit=crop"
+                 alt="Letter"
+                 class="w-full h-72 object-cover sepia" />
+            <div class="p-6">
+                <span class="text-xs uppercase tracking-widest text-[#9a8a79]">Letters</span>
+                <h2 class="title-font text-3xl mt-3 text-[#5f4d3d] leading-tight">
+                    Correspondence of Leon Kilat
+                </h2>
+                <p class="mt-4 text-sm text-[#7a6a5a] leading-relaxed">
+                    Personal letters detailing revolutionary movements prior to the Battle of Tres de Abril.
+                </p>
+            </div>
+        </div>
+
+        <!-- CALLE MAGALLANES -->
+        <div class="bg-[#faf8f2] border border-[#ddd3c4] shadow-sm overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1974&auto=format&fit=crop"
+                 alt="Old Street"
+                 class="w-full h-72 object-cover sepia" />
+            <div class="p-6">
+                <span class="text-xs uppercase tracking-widest text-[#9a8a79]">Photos</span>
+                <h2 class="title-font text-3xl mt-3 text-[#5f4d3d] leading-tight">
+                    Calle Magallanes Street View
+                </h2>
+                <p class="mt-4 text-sm text-[#7a6a5a] leading-relaxed">
+                    Century-old photograph documenting Cebu’s commercial district during the American era.
+                </p>
+            </div>
+        </div>
+
+        <!-- PARISH REGISTRY -->
+        <div class="bg-[#faf8f2] border border-[#ddd3c4] shadow-sm overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?q=80&w=1974&auto=format&fit=crop"
+                 alt="Registry"
+                 class="w-full h-72 object-cover sepia" />
+            <div class="p-6">
+                <span class="text-xs uppercase tracking-widest text-[#9a8a79]">Records</span>
+                <h2 class="title-font text-3xl mt-3 text-[#5f4d3d] leading-tight">
+                    Parish Registry of Cebu
+                </h2>
+                <p class="mt-4 text-sm text-[#7a6a5a] leading-relaxed">
+                    Original parish records containing baptisms and marriages dating back to the 1700s.
+                </p>
+            </div>
+        </div>
+
+        <!-- CUSTOMS LEDGERS -->
+        <div class="bg-[#faf8f2] border border-[#ddd3c4] shadow-sm overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1974&auto=format&fit=crop"
+                 alt="Port"
+                 class="w-full h-72 object-cover sepia" />
+            <div class="p-6">
+                <span class="text-xs uppercase tracking-widest text-[#9a8a79]">Trade Records</span>
+                <h2 class="title-font text-3xl mt-3 text-[#5f4d3d] leading-tight">
+                    Port of Cebu Customs Ledgers
+                </h2>
+                <p class="mt-4 text-sm text-[#7a6a5a] leading-relaxed">
+                    Collection of shipping manifests from the early 20th century trade peak.
+                </p>
+            </div>
+        </div>
+
+        <!-- FLORA DE FILIPINAS -->
+        <div class="bg-[#faf8f2] border border-[#ddd3c4] shadow-sm overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?q=80&w=1974&auto=format&fit=crop"
+                 alt="Plant"
+                 class="w-full h-72 object-cover sepia" />
+            <div class="p-6">
+                <span class="text-xs uppercase tracking-widest text-[#9a8a79]">Botanical</span>
+                <h2 class="title-font text-3xl mt-3 text-[#5f4d3d] leading-tight">
+                    Flora de Filipinas Extract
+                </h2>
+                <p class="mt-4 text-sm text-[#7a6a5a] leading-relaxed">
+                    Botanical illustrations highlighting Philippine endemic plant species.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGINATION -->
+    <div class="flex items-center justify-center gap-4 mt-16">
+        <button class="w-10 h-10 rounded-full border border-[#d5c8b8] text-[#786858] hover:bg-[#ebe2d4] transition">←</button>
+        <button class="w-10 h-10 rounded-full bg-[#7a5b43] text-white">1</button>
+        <button class="w-10 h-10 rounded-full border border-[#d5c8b8] text-[#786858] hover:bg-[#ebe2d4] transition">2</button>
+        <button class="w-10 h-10 rounded-full border border-[#d5c8b8] text-[#786858] hover:bg-[#ebe2d4] transition">3</button>
+        <span class="text-[#8a7a6b]">...</span>
+        <button class="w-10 h-10 rounded-full border border-[#d5c8b8] text-[#786858] hover:bg-[#ebe2d4] transition">20</button>
+        <button class="w-10 h-10 rounded-full border border-[#d5c8b8] text-[#786858] hover:bg-[#ebe2d4] transition">→</button>
+    </div>
+</section>
